@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Formulario</title>
+
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO</h1>
+    </header>
+
+    <SECtion>
+        <div>
+            <form action="">
+                <fieldset>
+                <legend>Parte inicial</legend>
+                    <label for="nombre">Nombre
+                        <input type="text" id="nombre" maxlength="20" placeholder="escribe tu nombre" value="Fredy Cardona" readonly>
+                    </label>
+                    <br/> <br/>
+
+                    <label for="cc">Documento
+                        <input type="text" id="cc" maxlength="20" placeholder="escribe tu nombre" value="103746282" readonly>
+                    </label>           
+                    <br/><br/>
+
+                    <!--Rango Deslizable-->
+                    <label for="edad">Edad
+                        <input type="range" id="edad" min="15" max="60" value="15" step="5">
+                    </label>
+                    <br/><br/>
+
+                    <!--Elemento de control    number-->
+                    <label for="tiempoEmpresa">Tiempo en la Empresa
+                        <input type="number" name="" id="tiempoEmpresa" step="5">
+                    </label>
+                    <br/><br/>
+
+                    <!--Password-->
+                    <label for="contraseña">Contraseña
+                        <input type="password" name="" id="contraseña" >
+                    </label>
+                    <br/><br/>
+
+                    <!--Date-->
+                    <label for="fecha">Fecha
+                        <input type="date" name="" id="fecha">
+                    </label>
+                    <br/><br/>
+
+                    <!--Color-->
+                    <label for="color">Seleccione un color
+                        <input type="color" name="" id="color">
+                    </label>
+                    <br/><br/>
+
+                    <!--Archivo  multiple= Permite seleccionar varios-->
+                    <label for="file">Seleccione un Archivo
+                        <input type="file" name="" id="file" multiple>
+                    </label>
+                    <br/><br/>
+
+                    <!--Correo-->
+                    <label for="correo">Correo
+                        <input type="email" name="" id="correo">
+                    </label>
+                </fieldset>
+                <input type="button" value="Enviar">
+                <input type="submit" value="Guardar">
+                <input type="reset" value="Restaurar">
+            </form>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Parte dos</legend>
+                <select name="" id="">
+                    <option value="1">Medellin</option>
+                    <option value="2">Cali</option>
+                    <option value="3">Monteria</option>
+                    <option value="4">Barranquilla</option>
+                </select>
+                <br/><br/>
+
+                <!---Radio button  checked= seleccion por defecto/ -->
+                <!---Se les pone el mismo name a todos para que sea de unica seleccion -->
+                <h3>Estado Civil</h3>
+                <label for="">
+                    <input type="radio" name="estado_civil" id="" checked>
+                    Soltero 
+                </label>
+                <br/>
+
+                <label for="">
+                    <input type="radio" name="estado_civil" id="">
+                    Casado 
+                </label>
+                <br/>
+
+                <label for="">
+                    <input type="radio" name="estado_civil" id="">
+                    Union libre 
+                </label>
+                <br/><br/>
+
+                <!--checkbox-->
+                <h3>Seleccione una opción</h3>
+
+                <label for="">
+                    <input type="checkbox" name="" id="" value="1">
+                    Dibujar
+                </label>
+                <br/>
+
+                <label for="">
+                    <input type="checkbox" name="" id="" value="2">
+                    Cantar 
+                </label>
+                <br/>
+
+                <label for="">
+                    <input type="checkbox" name="" id="" value="3">
+                    Pintar
+                </label>
+                <br/>
+
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    Programar
+                </label>
+                <br/><br/>
+
+                <!--Textarea-->
+                <h3>Textarea</h3>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <br/><br/>
+
+                <!--Datalist con input-->
+                <h3>Datalsit</h3>
+                <label for="">Cuidad
+                    <input type="text" name="cuidad" id="" list="cuidades"> 
+                    <datalist id="cuidades">
+                        <option value="Medellin">Medellin</option>
+                        <option value="Monteria">Monteria</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                    </datalist>
+                </label>
+            </fieldset>
+        </div>
+    </SECtion>
+</body>
+</html>
